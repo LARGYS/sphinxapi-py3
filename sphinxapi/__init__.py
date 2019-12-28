@@ -430,8 +430,8 @@ class SphinxClient:
             {'type': SPH_FILTER_FLOATRANGE, 'attr': attribute, 'exclude': exclude, 'min': min_, 'max': max_})
 
     def SetGeoAnchor(self, attrlat, attrlong, latitude, longitude):
-        assert (isinstance(attrlat, str))
-        assert (isinstance(attrlong, str))
+        # assert (isinstance(attrlat, str))
+        # assert (isinstance(attrlong, str))
         assert (isinstance(latitude, float))
         assert (isinstance(longitude, float))
         self._anchor['attrlat'] = attrlat
